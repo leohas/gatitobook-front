@@ -1,7 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+
 import { minusculoValidator } from 'src/app/validators/minusculo.validator'
+import { usuarioSenhaIguaisValidator } from 'src/app/validators/usuario-senha-iguais.validator';
+
 import { NovoUsuario } from 'src/app/utils/types/novo-usuario/novo-usuario'
+
 import { NovoUsuarioService } from 'src/app/services/novo-usuario/novo-usuario.service';
 import { UsuarioExisteService } from 'src/app/services/usuario-existe/usuario-existe.service';
 
@@ -31,12 +35,16 @@ export class NovoUsuarioComponent implements OnInit {
         ],
         password: [''],
       },
+      {
+        validators: [usuarioSenhaIguaisValidator]
+      }
     );
   }
 
   cadastrar() {
     if (this.novoUsuarioForm.valid) {
       const novoUsuario = this.novoUsuarioForm.getRawValue() as NovoUsuario
+      console.log(novoUsuario)
     }
   }
 }
