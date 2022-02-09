@@ -8,7 +8,7 @@ import { AnimaisRoutingModule } from './animais-routing.module';
   declarations: [],
   imports: [
     CommonModule,
-    AnimaisRoutingModule
+    AnimaisRoutingModule,
   ]
 })
 export class AnimaisModule { }
