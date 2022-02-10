@@ -7,10 +7,13 @@ import { CabecalhoModule } from './modules/cabecalho/cabecalho.module';
 
 import { AppComponent } from './app.component';
 import { RodapeModule } from './modules/rodape/rodape.module';
+import { AnimalComponent } from './components/animais/animal/animal.component';
+import { CartaoComponent } from './components/cartao/cartao.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    AnimalComponent,
   ],
   imports: [
     BrowserModule,
