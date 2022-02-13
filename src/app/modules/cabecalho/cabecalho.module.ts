@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { MenuModule } from '../menu/menu.module';
+
 import { CabecalhoComponent } from 'src/app/components/componentes/cabecalho/cabecalho.component';
 
 
@@ -9,7 +11,7 @@ import { CabecalhoComponent } from 'src/app/components/componentes/cabecalho/cab
 @NgModule({
   declarations: [CabecalhoComponent],
   imports: [
-    CommonModule, RouterModule
+    CommonModule, RouterModule, MenuModule
   ],
   exports: [CabecalhoComponent]
 })

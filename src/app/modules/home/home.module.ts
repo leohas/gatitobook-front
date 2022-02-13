@@ -2,14 +2,12 @@ import { NgModule } from '@angular/core';
 
 import { CommonModule } from '@angular/common';
 import { HomeRoutingModule } from '../../components/home/home-routing.module';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { MensagemModule } from '../mensagem/mensagem.module';
+import { FormsModule } from '@angular/forms';
+import { SharedModule } from '../shared/shared.module';
 
 import { LoginComponent } from 'src/app/components/home/login/login.component'
 import { HomeComponent } from 'src/app/components/home/home.component';
 import { NovoUsuarioComponent } from 'src/app/components/home/novo-usuario/novo-usuario.component';
-import { CabecalhoModule } from '../cabecalho/cabecalho.module';
-import { CabecalhoComponent } from 'src/app/components/componentes/cabecalho/cabecalho.component';
 
 @NgModule({
   declarations: [HomeComponent, LoginComponent, NovoUsuarioComponent],
@@ -17,8 +15,7 @@ import { CabecalhoComponent } from 'src/app/components/componentes/cabecalho/cab
     CommonModule,
     HomeRoutingModule,
     FormsModule,
-    MensagemModule,
-    ReactiveFormsModule,
+    SharedModule
   ],
   exports: [HomeComponent]
 })

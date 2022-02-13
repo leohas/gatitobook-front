@@ -1,26 +1,25 @@
 import { NgModule } from '@angular/core';
 
+import { AppComponent } from './app.component';
+
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { CabecalhoModule } from './modules/cabecalho/cabecalho.module';
-
-import { AppComponent } from './app.component';
 import { RodapeModule } from './modules/rodape/rodape.module';
-import { AnimalComponent } from './components/animais/animal/animal.component';
-import { CartaoComponent } from './components/cartao/cartao.component';
+import { AutenticacaoModule } from './modules/autenticacao/autenticacao.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AnimalComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     CabecalhoModule,
-    RodapeModule
+    RodapeModule,
+    AutenticacaoModule
   ],
   providers: [],
   bootstrap: [AppComponent]
