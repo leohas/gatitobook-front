@@ -1,3 +1,4 @@
+import { NovoAnimalComponent } from './../../components/animais/novo-animal/novo-animal.component';
 import { NgModule } from '@angular/core';
 
 import { CommonModule } from '@angular/common';
@@ -17,7 +18,8 @@ import { ComentariosComponent } from 'src/app/components/animais/detalhe-animal/
     GradeFotosAnimaisComponent,
     AnimalComponent,
     DetalheAnimalComponent,
-    ComentariosComponent
+    ComentariosComponent,
+    NovoAnimalComponent
   ],
   imports: [
     CommonModule,
